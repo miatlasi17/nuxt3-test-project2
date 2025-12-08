@@ -1,0 +1,68 @@
+{
+  "brand": "Nuxt3 Static Shop",
+  "nav": {
+    "home": "Home",
+    "category": "Category",
+    "cart": "Cart"
+  },
+  "footer": "Built with Nuxt 3 - static demo content only.",
+  "home": {
+    "badge": "Home",
+    "title": "Curated digital & physical goods.",
+    "description": "Everything on this page is static for now. The layout mirrors a simple storefront using Nuxt 3 conventions: layouts, pages, and a splash of CSS.",
+    "featured": "Featured categories",
+    "popular": "Popular picks",
+    "categories": [
+      { "title": "Wearables", "description": "Minimalist layers, breathable fabrics, subtle tech details." },
+      { "title": "Workspace", "description": "Desks, lights, and tools to keep your flow steady." },
+      { "title": "Audio", "description": "Headphones, speakers, and accessories tuned for focus." },
+      { "title": "Digital", "description": "Icon packs, templates, and design assets for quick wins." }
+    ],
+    "products": [
+      { "name": "Nimbus Chair", "blurb": "Ergonomic mesh chair with adaptive lumbar support.", "price": "$320" },
+      { "name": "Focus Lamp", "blurb": "Dimmable LED with warm-to-cool spectrum presets.", "price": "$120" },
+      { "name": "Arc Headphones", "blurb": "Hybrid noise-canceling with 32h battery life.", "price": "$260" },
+      { "name": "Creator Kit", "blurb": "Bundle of Figma templates, icons, and UI flows.", "price": "$48" }
+    ]
+  },
+  "category": {
+    "badge": "Category",
+    "title": "Choose a lane.",
+    "description": "Static showcase of a few categories and items. In a real build, these would come from content files or an API.",
+    "listTitle": "Categories",
+    "highlights": "Highlights",
+    "categories": [
+      {
+        "title": "Work Essentials",
+        "description": "Everything for a calm, efficient desk setup.",
+        "items": ["Standing desk", "Flexible lamp", "Cable kit"]
+      },
+      {
+        "title": "On-the-go",
+        "description": "Carry light, stay productive anywhere.",
+        "items": ["Slim backpack", "Portable charger", "Compact keyboard"]
+      },
+      {
+        "title": "Sound",
+        "description": "Focused listening or shared sessions.",
+        "items": ["Noise-canceling headphones", "Desktop speakers", "Podcast mic"]
+      }
+    ]
+  },
+  "cart": {
+    "badge": "Cart",
+    "title": "Static cart snapshot.",
+    "description": "No interactivity yet - this page simply shows how a cart summary could look before wiring real data.",
+    "qtyLabel": "Qty:",
+    "summaryTitle": "Order summary",
+    "subtotalLabel": "Subtotal:",
+    "subtotalValue": "$608",
+    "shippingNote": "Shipping calculated at checkout.",
+    "status": "Static preview only",
+    "items": [
+      { "name": "Nimbus Chair", "price": "$320", "qty": 1 },
+      { "name": "Focus Lamp", "price": "$120", "qty": 2 },
+      { "name": "Creator Kit", "price": "$48", "qty": 1 }
+    ]
+  }
+}

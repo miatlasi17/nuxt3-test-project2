@@ -1,0 +1,68 @@
+{
+  "brand": "Tienda estática Nuxt3",
+  "nav": {
+    "home": "Inicio",
+    "category": "Categoría",
+    "cart": "Carrito"
+  },
+  "footer": "Construido con Nuxt 3 - contenido de demostración estática.",
+  "home": {
+    "badge": "Inicio",
+    "title": "Productos digitales y físicos seleccionados.",
+    "description": "Todo en esta página es estático por ahora. El diseño imita una tienda sencilla usando convenciones de Nuxt 3: layouts, páginas y algo de CSS.",
+    "featured": "Categorías destacadas",
+    "popular": "Selecciones populares",
+    "categories": [
+      { "title": "Tecnología portátil", "description": "Capas minimalistas, telas transpirables y detalles tecnológicos sutiles." },
+      { "title": "Espacio de trabajo", "description": "Escritorios, luces y herramientas para mantener el ritmo." },
+      { "title": "Audio", "description": "Audífonos, bocinas y accesorios afinados para el enfoque." },
+      { "title": "Digital", "description": "Paquetes de íconos, plantillas y recursos de diseño para resultados rápidos." }
+    ],
+    "products": [
+      { "name": "Silla Nimbus", "blurb": "Silla de malla ergonómica con soporte lumbar adaptable.", "price": "$320" },
+      { "name": "Lámpara Focus", "blurb": "LED regulable con preajustes de espectro cálido a frío.", "price": "$120" },
+      { "name": "Audífonos Arc", "blurb": "Cancelación híbrida de ruido con batería de 32h.", "price": "$260" },
+      { "name": "Kit Creator", "blurb": "Paquete de plantillas de Figma, íconos y flujos de UI.", "price": "$48" }
+    ]
+  },
+  "category": {
+    "badge": "Categoría",
+    "title": "Elige un enfoque.",
+    "description": "Exhibición estática de algunas categorías y artículos. En un proyecto real vendrían de archivos de contenido o un API.",
+    "listTitle": "Categorías",
+    "highlights": "Destacados",
+    "categories": [
+      {
+        "title": "Esenciales de trabajo",
+        "description": "Todo para un escritorio tranquilo y eficiente.",
+        "items": ["Escritorio ajustable", "Lámpara flexible", "Kit de cables"]
+      },
+      {
+        "title": "Para moverse",
+        "description": "Viaja ligero y sigue siendo productivo en cualquier lugar.",
+        "items": ["Mochila delgada", "Cargador portátil", "Teclado compacto"]
+      },
+      {
+        "title": "Sonido",
+        "description": "Escucha enfocada o sesiones compartidas.",
+        "items": ["Audífonos con cancelación", "Bocinas de escritorio", "Micrófono para podcast"]
+      }
+    ]
+  },
+  "cart": {
+    "badge": "Carrito",
+    "title": "Vista previa estática del carrito.",
+    "description": "Sin interactividad todavía; esta página solo muestra cómo se vería el resumen antes de conectar datos reales.",
+    "qtyLabel": "Cant.:",
+    "summaryTitle": "Resumen de la compra",
+    "subtotalLabel": "Subtotal:",
+    "subtotalValue": "$608",
+    "shippingNote": "El envío se calcula en el checkout.",
+    "status": "Solo demostración estática",
+    "items": [
+      { "name": "Silla Nimbus", "price": "$320", "qty": 1 },
+      { "name": "Lámpara Focus", "price": "$120", "qty": 2 },
+      { "name": "Kit Creator", "price": "$48", "qty": 1 }
+    ]
+  }
+}

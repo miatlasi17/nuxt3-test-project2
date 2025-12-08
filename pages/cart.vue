@@ -1,9 +1,9 @@
-﻿<template>
+<template>
   <section>
     <div class="hero">
-      <p class="badge">Cart</p>
-      <h1>Static cart snapshot.</h1>
-      <p>No interactivity yet—this page simply shows how a cart summary could look before wiring real data.</p>
+      <p class="badge">{{ t("cart.badge") }}</p>
+      <h1>{{ t("cart.title") }}</h1>
+      <p>{{ t("cart.description") }}</p>
     </div>
 
     <div class="cart-summary">
@@ -13,26 +13,25 @@
           <div class="meta">
             <strong>{{ item.name }}</strong>
             <span class="price">{{ item.price }}</span>
-            <span style="color: var(--muted);">Qty: {{ item.qty }}</span>
+            <span style="color: var(--muted);">{{ t("cart.qtyLabel") }} {{ item.qty }}</span>
           </div>
         </div>
       </div>
       <div class="card">
-        <h3>Order summary</h3>
-        <p class="price" style="margin: 10px 0 6px;">Subtotal: {{ subtotal }}</p>
-        <p style="margin: 0 0 12px; color: var(--muted);">Shipping calculated at checkout.</p>
-        <p class="badge" style="width: fit-content;">Static preview only</p>
+        <h3>{{ t("cart.summaryTitle") }}</h3>
+        <p class="price" style="margin: 10px 0 6px;">{{ t("cart.subtotalLabel") }} {{ subtotal }}</p>
+        <p style="margin: 0 0 12px; color: var(--muted);">{{ t("cart.shippingNote") }}</p>
+        <p class="badge" style="width: fit-content;">{{ t("cart.status") }}</p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-const cart = [
-  { name: "Nimbus Chair", price: "$320", qty: 1 },
-  { name: "Focus Lamp", price: "$120", qty: 2 },
-  { name: "Creator Kit", price: "$48", qty: 1 }
-];
+type CartItem = { name: string; price: string; qty: number };
 
-const subtotal = "$608";
+const { t, tm } = useI18n();
+
+const cart = computed<CartItem[]>(() => (tm("cart.items") as CartItem[]) || []);
+const subtotal = computed(() => t("cart.subtotalValue"));
 </script>
