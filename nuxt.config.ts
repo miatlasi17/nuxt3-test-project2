@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe"],
   i18n: {
     locales: [
       { code: "en", name: "English", file: "en.json" },
