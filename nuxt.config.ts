@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe", "vue3-carousel-nuxt", "@vite-pwa/nuxt"],
+  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe", "vue3-carousel-nuxt", "@vite-pwa/nuxt", "nuxt-lazy-hydrate"],
   pwa: {
     manifest: {
       name: "Nuxt3 Static Shop",
