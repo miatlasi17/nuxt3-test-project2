@@ -3,7 +3,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe", "vue3-carousel-nuxt"],
+  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe", "vue3-carousel-nuxt", "@vite-pwa/nuxt"],
+  pwa: {
+    manifest: {
+      name: "Nuxt3 Static Shop",
+      short_name: "StaticShop",
+      theme_color: "#0b1021",
+      background_color: "#0b1021",
+    },
+  },
   stripe: {
     client: {
       key: process.env.STRIPE_PUBLIC_KEY,
