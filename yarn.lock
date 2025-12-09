@@ -2562,6 +2562,11 @@
     magic-string "^0.25.0"
     string.prototype.matchall "^4.0.6"
 
+"@tusbar/cache-control@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@tusbar/cache-control/-/cache-control-1.0.2.tgz"
+  integrity sha512-PXfjYTYBVvMPYCLDWj+xIOA9ITFbbhWCHzLcqUCJ5TPGm4JO4cxpGb7x3K8Q1K1ADgNgfBxLsDcTMVRydtZB9A==
+
 "@tybys/wasm-util@^0.10.1":
   version "0.10.1"
   resolved "https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.1.tgz"
@@ -5776,6 +5781,13 @@ nuxt-lazy-hydrate@^1.0.0:
   dependencies:
     "@nuxt/kit" "^3.3.2"
     vue3-lazy-hydration "^1.2.1"
+
+nuxt-multi-cache@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npmjs.org/nuxt-multi-cache/-/nuxt-multi-cache-4.0.3.tgz"
+  integrity sha512-ozfdovvS8ffCTDrHq2UcBI/yQJ9ncbzG50jho7qpg/vWFc85NOD1a3Tpl8Jh/IJj3SiCIkmTC72Cqq9NuHHaEA==
+  dependencies:
+    "@tusbar/cache-control" "^1.0.2"
 
 nuxt@^4.2.1:
   version "4.2.1"

@@ -16,6 +16,7 @@
     "@unlok-co/nuxt-stripe": "^5.0.0",
     "@vite-pwa/nuxt": "^1.1.0",
     "nuxt-lazy-hydrate": "^1.0.0",
+    "nuxt-multi-cache": "^4.0.3",
     "vue3-carousel-nuxt": "^1.1.6"
   }
 }

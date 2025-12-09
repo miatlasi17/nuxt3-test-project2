@@ -3,7 +3,18 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe", "vue3-carousel-nuxt", "@vite-pwa/nuxt", "nuxt-lazy-hydrate"],
+  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe", "vue3-carousel-nuxt", "@vite-pwa/nuxt", "nuxt-lazy-hydrate", "nuxt-multi-cache"],
+  multiCache: {
+    component: {
+      enabled: true,
+    },
+    data: {
+      enabled: true,
+    },
+    route: {
+      enabled: true,
+    },
+  },
   pwa: {
     manifest: {
       name: "Nuxt3 Static Shop",
