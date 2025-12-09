@@ -15,13 +15,19 @@
     </div>
 
     <p class="section-title">{{ t("home.popular") }}</p>
-    <div class="grid">
-      <div class="card" v-for="product in products" :key="product.name">
-        <h3>{{ product.name }}</h3>
-        <p>{{ product.blurb }}</p>
-        <p class="price">{{ product.price }}</p>
-      </div>
-    </div>
+    <Carousel :items-to-show="3" :wrap-around="true" :autoplay="3000">
+      <Slide v-for="product in products" :key="product.name">
+        <div class="card carousel-card">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.blurb }}</p>
+          <p class="price">{{ product.price }}</p>
+        </div>
+      </Slide>
+      <template #addons>
+        <Navigation />
+        <Pagination />
+      </template>
+    </Carousel>
   </section>
 </template>
 

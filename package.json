@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.2.1",
-    "@unlok-co/nuxt-stripe": "^5.0.0"
+    "@unlok-co/nuxt-stripe": "^5.0.0",
+    "vue3-carousel-nuxt": "^1.1.6"
   }
 }

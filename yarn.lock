@@ -995,7 +995,7 @@
     unctx "^2.4.1"
     untyped "^2.0.0"
 
-"@nuxt/kit@^3.15.4", "@nuxt/kit@^3.16.2":
+"@nuxt/kit@^3.12.4", "@nuxt/kit@^3.15.4", "@nuxt/kit@^3.16.2":
   version "3.20.1"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.20.1.tgz"
   integrity sha512-TIslaylfI5kd3AxX5qts0qyrIQ9Uq3HAA1bgIIJ+c+zpDfK338YS+YrCWxBBzDMECRCbAS58mqAd2MtJfG1ENA==
@@ -6166,6 +6166,19 @@ vue-router@^4.6.3:
   integrity sha512-ARBedLm9YlbvQomnmq91Os7ck6efydTSpRP3nuOKCvgJOHNrhRoJDSKtee8kcL1Vf7nz6U+PMBL+hTvR3bTVQg==
   dependencies:
     "@vue/devtools-api" "^6.6.4"
+
+vue3-carousel-nuxt@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/vue3-carousel-nuxt/-/vue3-carousel-nuxt-1.1.6.tgz"
+  integrity sha512-y5CTJBj3HryL0l+8pzvXyWHTj/SUiBYChsces5GMyKQoad2yMXsdofzpKSrTquoCgrd1hWHUO2DBnN6ougA0Gg==
+  dependencies:
+    "@nuxt/kit" "^3.12.4"
+    vue3-carousel "^0.15.0"
+
+vue3-carousel@^0.15.0:
+  version "0.15.1"
+  resolved "https://registry.npmjs.org/vue3-carousel/-/vue3-carousel-0.15.1.tgz"
+  integrity sha512-nV2ChLZtgAOikmls8WaVe37vO4Wagk4RYawePHIvXrFtduFnQODyzPx8MmXaAb6l+ka72yAi04ZeCyciiyJMyA==
 
 vue@^3.5.14, vue@^3.5.23:
   version "3.5.25"

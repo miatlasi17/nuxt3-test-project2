@@ -3,7 +3,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe"],
+  modules: ["@nuxtjs/i18n", "@unlok-co/nuxt-stripe", "vue3-carousel-nuxt"],
+  stripe: {
+    client: {
+      key: process.env.STRIPE_PUBLIC_KEY,
+    },
+  },
   i18n: {
     locales: [
       { code: "en", name: "English", file: "en.json" },
